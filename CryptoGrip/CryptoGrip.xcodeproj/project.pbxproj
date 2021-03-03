@@ -1,0 +1,666 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		826FAC0225EEFECF008CF52A /* CryptoGripApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826FAC0125EEFECF008CF52A /* CryptoGripApp.swift */; };
+		826FAC0425EEFECF008CF52A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826FAC0325EEFECF008CF52A /* ContentView.swift */; };
+		826FAC0625EEFED0008CF52A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 826FAC0525EEFED0008CF52A /* Assets.xcassets */; };
+		826FAC0925EEFED0008CF52A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 826FAC0825EEFED0008CF52A /* Preview Assets.xcassets */; };
+		826FAC1425EEFED0008CF52A /* CryptoGripTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826FAC1325EEFED0008CF52A /* CryptoGripTests.swift */; };
+		826FAC1F25EEFED0008CF52A /* CryptoGripUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826FAC1E25EEFED0008CF52A /* CryptoGripUITests.swift */; };
+		826FAC3025EF0008008CF52A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 826FAC2F25EF0008008CF52A /* GoogleService-Info.plist */; };
+		826FAC3C25EF02AB008CF52A /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 826FAC3B25EF02AB008CF52A /* FirebaseAnalytics */; };
+		826FAC3E25EF02AB008CF52A /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 826FAC3D25EF02AB008CF52A /* FirebaseAuth */; };
+		826FAC4325EF030B008CF52A /* AuthenticationState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826FAC4225EF030B008CF52A /* AuthenticationState.swift */; };
+		826FAC4825EF04D0008CF52A /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826FAC4725EF04D0008CF52A /* StringExtensions.swift */; };
+		826FAC4D25EF06E1008CF52A /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826FAC4C25EF06E1008CF52A /* HomePage.swift */; };
+		826FAC5625EF0903008CF52A /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826FAC5525EF0903008CF52A /* LoginView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		826FAC1025EEFED0008CF52A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 826FABF625EEFECF008CF52A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 826FABFD25EEFECF008CF52A;
+			remoteInfo = CryptoGrip;
+		};
+		826FAC1B25EEFED0008CF52A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 826FABF625EEFECF008CF52A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 826FABFD25EEFECF008CF52A;
+			remoteInfo = CryptoGrip;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		826FABFE25EEFECF008CF52A /* CryptoGrip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoGrip.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		826FAC0125EEFECF008CF52A /* CryptoGripApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoGripApp.swift; sourceTree = "<group>"; };
+		826FAC0325EEFECF008CF52A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		826FAC0525EEFED0008CF52A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		826FAC0825EEFED0008CF52A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		826FAC0A25EEFED0008CF52A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		826FAC0F25EEFED0008CF52A /* CryptoGripTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CryptoGripTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		826FAC1325EEFED0008CF52A /* CryptoGripTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoGripTests.swift; sourceTree = "<group>"; };
+		826FAC1525EEFED0008CF52A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		826FAC1A25EEFED0008CF52A /* CryptoGripUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CryptoGripUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		826FAC1E25EEFED0008CF52A /* CryptoGripUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoGripUITests.swift; sourceTree = "<group>"; };
+		826FAC2025EEFED0008CF52A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		826FAC2F25EF0008008CF52A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		826FAC4225EF030B008CF52A /* AuthenticationState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationState.swift; sourceTree = "<group>"; };
+		826FAC4725EF04D0008CF52A /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		826FAC4C25EF06E1008CF52A /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
+		826FAC5525EF0903008CF52A /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		826FABFB25EEFECF008CF52A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				826FAC3C25EF02AB008CF52A /* FirebaseAnalytics in Frameworks */,
+				826FAC3E25EF02AB008CF52A /* FirebaseAuth in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		826FAC0C25EEFED0008CF52A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		826FAC1725EEFED0008CF52A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		826FABF525EEFECF008CF52A = {
+			isa = PBXGroup;
+			children = (
+				826FAC0025EEFECF008CF52A /* CryptoGrip */,
+				826FAC1225EEFED0008CF52A /* CryptoGripTests */,
+				826FAC1D25EEFED0008CF52A /* CryptoGripUITests */,
+				826FABFF25EEFECF008CF52A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		826FABFF25EEFECF008CF52A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				826FABFE25EEFECF008CF52A /* CryptoGrip.app */,
+				826FAC0F25EEFED0008CF52A /* CryptoGripTests.xctest */,
+				826FAC1A25EEFED0008CF52A /* CryptoGripUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		826FAC0025EEFECF008CF52A /* CryptoGrip */ = {
+			isa = PBXGroup;
+			children = (
+				826FAC2F25EF0008008CF52A /* GoogleService-Info.plist */,
+				826FAC0A25EEFED0008CF52A /* Info.plist */,
+				826FAC5425EF07EB008CF52A /* Models */,
+				826FAC5325EF07D5008CF52A /* Resources */,
+				826FAC5225EF07BC008CF52A /* Views */,
+				826FAC0125EEFECF008CF52A /* CryptoGripApp.swift */,
+				826FAC0725EEFED0008CF52A /* Preview Content */,
+			);
+			path = CryptoGrip;
+			sourceTree = "<group>";
+		};
+		826FAC0725EEFED0008CF52A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				826FAC0825EEFED0008CF52A /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		826FAC1225EEFED0008CF52A /* CryptoGripTests */ = {
+			isa = PBXGroup;
+			children = (
+				826FAC1325EEFED0008CF52A /* CryptoGripTests.swift */,
+				826FAC1525EEFED0008CF52A /* Info.plist */,
+			);
+			path = CryptoGripTests;
+			sourceTree = "<group>";
+		};
+		826FAC1D25EEFED0008CF52A /* CryptoGripUITests */ = {
+			isa = PBXGroup;
+			children = (
+				826FAC1E25EEFED0008CF52A /* CryptoGripUITests.swift */,
+				826FAC2025EEFED0008CF52A /* Info.plist */,
+			);
+			path = CryptoGripUITests;
+			sourceTree = "<group>";
+		};
+		826FAC5225EF07BC008CF52A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				826FAC0325EEFECF008CF52A /* ContentView.swift */,
+				826FAC4C25EF06E1008CF52A /* HomePage.swift */,
+				826FAC5525EF0903008CF52A /* LoginView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		826FAC5325EF07D5008CF52A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				826FAC0525EEFED0008CF52A /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		826FAC5425EF07EB008CF52A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				826FAC4725EF04D0008CF52A /* StringExtensions.swift */,
+				826FAC4225EF030B008CF52A /* AuthenticationState.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		826FABFD25EEFECF008CF52A /* CryptoGrip */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 826FAC2325EEFED0008CF52A /* Build configuration list for PBXNativeTarget "CryptoGrip" */;
+			buildPhases = (
+				826FABFA25EEFECF008CF52A /* Sources */,
+				826FABFB25EEFECF008CF52A /* Frameworks */,
+				826FABFC25EEFECF008CF52A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CryptoGrip;
+			packageProductDependencies = (
+				826FAC3B25EF02AB008CF52A /* FirebaseAnalytics */,
+				826FAC3D25EF02AB008CF52A /* FirebaseAuth */,
+			);
+			productName = CryptoGrip;
+			productReference = 826FABFE25EEFECF008CF52A /* CryptoGrip.app */;
+			productType = "com.apple.product-type.application";
+		};
+		826FAC0E25EEFED0008CF52A /* CryptoGripTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 826FAC2625EEFED0008CF52A /* Build configuration list for PBXNativeTarget "CryptoGripTests" */;
+			buildPhases = (
+				826FAC0B25EEFED0008CF52A /* Sources */,
+				826FAC0C25EEFED0008CF52A /* Frameworks */,
+				826FAC0D25EEFED0008CF52A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				826FAC1125EEFED0008CF52A /* PBXTargetDependency */,
+			);
+			name = CryptoGripTests;
+			productName = CryptoGripTests;
+			productReference = 826FAC0F25EEFED0008CF52A /* CryptoGripTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		826FAC1925EEFED0008CF52A /* CryptoGripUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 826FAC2925EEFED0008CF52A /* Build configuration list for PBXNativeTarget "CryptoGripUITests" */;
+			buildPhases = (
+				826FAC1625EEFED0008CF52A /* Sources */,
+				826FAC1725EEFED0008CF52A /* Frameworks */,
+				826FAC1825EEFED0008CF52A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				826FAC1C25EEFED0008CF52A /* PBXTargetDependency */,
+			);
+			name = CryptoGripUITests;
+			productName = CryptoGripUITests;
+			productReference = 826FAC1A25EEFED0008CF52A /* CryptoGripUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		826FABF625EEFECF008CF52A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					826FABFD25EEFECF008CF52A = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					826FAC0E25EEFED0008CF52A = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 826FABFD25EEFECF008CF52A;
+					};
+					826FAC1925EEFED0008CF52A = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 826FABFD25EEFECF008CF52A;
+					};
+				};
+			};
+			buildConfigurationList = 826FABF925EEFECF008CF52A /* Build configuration list for PBXProject "CryptoGrip" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 826FABF525EEFECF008CF52A;
+			packageReferences = (
+				826FAC3A25EF02AB008CF52A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = 826FABFF25EEFECF008CF52A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				826FABFD25EEFECF008CF52A /* CryptoGrip */,
+				826FAC0E25EEFED0008CF52A /* CryptoGripTests */,
+				826FAC1925EEFED0008CF52A /* CryptoGripUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		826FABFC25EEFECF008CF52A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				826FAC0925EEFED0008CF52A /* Preview Assets.xcassets in Resources */,
+				826FAC0625EEFED0008CF52A /* Assets.xcassets in Resources */,
+				826FAC3025EF0008008CF52A /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		826FAC0D25EEFED0008CF52A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		826FAC1825EEFED0008CF52A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		826FABFA25EEFECF008CF52A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				826FAC5625EF0903008CF52A /* LoginView.swift in Sources */,
+				826FAC4D25EF06E1008CF52A /* HomePage.swift in Sources */,
+				826FAC4825EF04D0008CF52A /* StringExtensions.swift in Sources */,
+				826FAC0425EEFECF008CF52A /* ContentView.swift in Sources */,
+				826FAC4325EF030B008CF52A /* AuthenticationState.swift in Sources */,
+				826FAC0225EEFECF008CF52A /* CryptoGripApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		826FAC0B25EEFED0008CF52A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				826FAC1425EEFED0008CF52A /* CryptoGripTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		826FAC1625EEFED0008CF52A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				826FAC1F25EEFED0008CF52A /* CryptoGripUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		826FAC1125EEFED0008CF52A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 826FABFD25EEFECF008CF52A /* CryptoGrip */;
+			targetProxy = 826FAC1025EEFED0008CF52A /* PBXContainerItemProxy */;
+		};
+		826FAC1C25EEFED0008CF52A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 826FABFD25EEFECF008CF52A /* CryptoGrip */;
+			targetProxy = 826FAC1B25EEFED0008CF52A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		826FAC2125EEFED0008CF52A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		826FAC2225EEFED0008CF52A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		826FAC2425EEFED0008CF52A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"CryptoGrip/Preview Content\"";
+				DEVELOPMENT_TEAM = CX5K4S84G5;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = CryptoGrip/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tylerdailey.Crypto-Grip";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		826FAC2525EEFED0008CF52A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"CryptoGrip/Preview Content\"";
+				DEVELOPMENT_TEAM = CX5K4S84G5;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = CryptoGrip/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tylerdailey.Crypto-Grip";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		826FAC2725EEFED0008CF52A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CX5K4S84G5;
+				INFOPLIST_FILE = CryptoGripTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tylerdailey.CryptoGripTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CryptoGrip.app/CryptoGrip";
+			};
+			name = Debug;
+		};
+		826FAC2825EEFED0008CF52A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CX5K4S84G5;
+				INFOPLIST_FILE = CryptoGripTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tylerdailey.CryptoGripTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CryptoGrip.app/CryptoGrip";
+			};
+			name = Release;
+		};
+		826FAC2A25EEFED0008CF52A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CX5K4S84G5;
+				INFOPLIST_FILE = CryptoGripUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tylerdailey.CryptoGripUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CryptoGrip;
+			};
+			name = Debug;
+		};
+		826FAC2B25EEFED0008CF52A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CX5K4S84G5;
+				INFOPLIST_FILE = CryptoGripUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tylerdailey.CryptoGripUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CryptoGrip;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		826FABF925EEFECF008CF52A /* Build configuration list for PBXProject "CryptoGrip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				826FAC2125EEFED0008CF52A /* Debug */,
+				826FAC2225EEFED0008CF52A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		826FAC2325EEFED0008CF52A /* Build configuration list for PBXNativeTarget "CryptoGrip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				826FAC2425EEFED0008CF52A /* Debug */,
+				826FAC2525EEFED0008CF52A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		826FAC2625EEFED0008CF52A /* Build configuration list for PBXNativeTarget "CryptoGripTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				826FAC2725EEFED0008CF52A /* Debug */,
+				826FAC2825EEFED0008CF52A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		826FAC2925EEFED0008CF52A /* Build configuration list for PBXNativeTarget "CryptoGripUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				826FAC2A25EEFED0008CF52A /* Debug */,
+				826FAC2B25EEFED0008CF52A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		826FAC3A25EF02AB008CF52A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk/";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.7.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		826FAC3B25EF02AB008CF52A /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 826FAC3A25EF02AB008CF52A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		826FAC3D25EF02AB008CF52A /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 826FAC3A25EF02AB008CF52A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 826FABF625EEFECF008CF52A /* Project object */;
+}
