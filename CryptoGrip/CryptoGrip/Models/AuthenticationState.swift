@@ -17,7 +17,7 @@ enum LoginOption {
 class AuthenticationState: NSObject, ObservableObject {
     @Published var loggedInUser: User?
     @Published var isAuthenticating = false
-    @Published var error: NSError?
+    @Published var error: Error?
     
     static let shared = AuthenticationState()
     
@@ -37,11 +37,16 @@ class AuthenticationState: NSObject, ObservableObject {
     }
     
     func signup(email: String, password: String, passwordConfirmation: String) {
-        // TODO
     }
 
     private func handleSignInWith(email: String, password: String) {
-        // TODO
+        auth.signIn(withEmail: email, password: password) { (result, error) in
+            if error != nil {
+                self.error = error
+            } else {
+                self.loggedInUser = result?.user
+            }
+        }
     }
 
     private func handleSignInWithApple() {

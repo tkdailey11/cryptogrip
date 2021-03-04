@@ -20,6 +20,8 @@
 		826FAC4825EF04D0008CF52A /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826FAC4725EF04D0008CF52A /* StringExtensions.swift */; };
 		826FAC4D25EF06E1008CF52A /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826FAC4C25EF06E1008CF52A /* HomePage.swift */; };
 		826FAC5625EF0903008CF52A /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826FAC5525EF0903008CF52A /* LoginView.swift */; };
+		826FAC5E25F17CFB008CF52A /* AuthPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826FAC5D25F17CFB008CF52A /* AuthPage.swift */; };
+		826FAC6325F17E1E008CF52A /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826FAC6225F17E1E008CF52A /* SignUpView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,8 @@
 		826FAC4725EF04D0008CF52A /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 		826FAC4C25EF06E1008CF52A /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
 		826FAC5525EF0903008CF52A /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		826FAC5D25F17CFB008CF52A /* AuthPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthPage.swift; sourceTree = "<group>"; };
+		826FAC6225F17E1E008CF52A /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +156,8 @@
 				826FAC0325EEFECF008CF52A /* ContentView.swift */,
 				826FAC4C25EF06E1008CF52A /* HomePage.swift */,
 				826FAC5525EF0903008CF52A /* LoginView.swift */,
+				826FAC5D25F17CFB008CF52A /* AuthPage.swift */,
+				826FAC6225F17E1E008CF52A /* SignUpView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -314,6 +320,8 @@
 				826FAC4D25EF06E1008CF52A /* HomePage.swift in Sources */,
 				826FAC4825EF04D0008CF52A /* StringExtensions.swift in Sources */,
 				826FAC0425EEFECF008CF52A /* ContentView.swift in Sources */,
+				826FAC6325F17E1E008CF52A /* SignUpView.swift in Sources */,
+				826FAC5E25F17CFB008CF52A /* AuthPage.swift in Sources */,
 				826FAC4325EF030B008CF52A /* AuthenticationState.swift in Sources */,
 				826FAC0225EEFECF008CF52A /* CryptoGripApp.swift in Sources */,
 			);

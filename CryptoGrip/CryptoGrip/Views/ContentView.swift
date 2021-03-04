@@ -16,7 +16,7 @@ struct ContentView: View {
             if authState.loggedInUser != nil {
                 HomePage()
             } else {
-                Text("Auth Screen")
+                AuthPage()
             }
         }
         .animation(.easeInOut)
