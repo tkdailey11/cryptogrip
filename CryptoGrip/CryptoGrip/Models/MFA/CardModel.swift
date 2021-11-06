@@ -2,7 +2,7 @@
 //  CardModel.swift
 //  CryptoGrip
 //
-//  Created by Tyler Dailey on 10/26/21.
+//  Created by Tyler Dailey on 11/5/21.
 //
 
 import Foundation

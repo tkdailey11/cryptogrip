@@ -1,15 +1,15 @@
 //
-//  MFAView.swift
+//  MFAScreen.swift
 //  CryptoGrip
 //
-//  Created by Tyler Dailey on 10/26/21.
+//  Created by Tyler Dailey on 11/5/21.
 //
 
 import SwiftUI
 import SlideOverCard
 import CodeScanner
 
-struct MFAView: View {
+struct MFAScreen: View {
     @State var isPresented: Bool = false
     
     var body: some View {
@@ -42,8 +42,8 @@ struct MFAView: View {
     }
 }
 
-struct MFAView_Previews: PreviewProvider {
+struct MFAScreen_Previews: PreviewProvider {
     static var previews: some View {
-        MFAView()
+        MFAScreen()
     }
 }

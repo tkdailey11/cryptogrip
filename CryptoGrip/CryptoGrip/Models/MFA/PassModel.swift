@@ -2,7 +2,7 @@
 //  PassModel.swift
 //  CryptoGrip
 //
-//  Created by Tyler Dailey on 10/27/21.
+//  Created by Tyler Dailey on 11/5/21.
 //
 
 import Foundation
@@ -39,3 +39,4 @@ class TestGenerator: GeneratorProtocol {
         self.hashAlgorithm = .sha512
     }
 }
+

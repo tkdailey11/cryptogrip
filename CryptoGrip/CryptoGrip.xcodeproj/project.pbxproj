@@ -22,6 +22,16 @@
 		826FAC5625EF0903008CF52A /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826FAC5525EF0903008CF52A /* LoginView.swift */; };
 		826FAC5E25F17CFB008CF52A /* AuthPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826FAC5D25F17CFB008CF52A /* AuthPage.swift */; };
 		826FAC6325F17E1E008CF52A /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826FAC6225F17E1E008CF52A /* SignUpView.swift */; };
+		827097F2273616900078827E /* PassViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827097F1273616900078827E /* PassViewModel.swift */; };
+		827097F8273616F30078827E /* PassModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827097F7273616F30078827E /* PassModel.swift */; };
+		827097FA273616FE0078827E /* CardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827097F9273616FE0078827E /* CardModel.swift */; };
+		827097FF2736174D0078827E /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827097FE2736174D0078827E /* GridView.swift */; };
+		827098012736175A0078827E /* PassView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827098002736175A0078827E /* PassView.swift */; };
+		827098042736178A0078827E /* BorderedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827098032736178A0078827E /* BorderedButton.swift */; };
+		82709807273618020078827E /* MFAScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82709806273618020078827E /* MFAScreen.swift */; };
+		8270980A273618570078827E /* THOTP in Frameworks */ = {isa = PBXBuildFile; productRef = 82709809273618570078827E /* THOTP */; };
+		8270980D273618EB0078827E /* CodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = 8270980C273618EB0078827E /* CodeScanner */; };
+		82709810273619130078827E /* SlideOverCard in Frameworks */ = {isa = PBXBuildFile; productRef = 8270980F273619130078827E /* SlideOverCard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +71,13 @@
 		826FAC5525EF0903008CF52A /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		826FAC5D25F17CFB008CF52A /* AuthPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthPage.swift; sourceTree = "<group>"; };
 		826FAC6225F17E1E008CF52A /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		827097F1273616900078827E /* PassViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassViewModel.swift; sourceTree = "<group>"; };
+		827097F7273616F30078827E /* PassModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassModel.swift; sourceTree = "<group>"; };
+		827097F9273616FE0078827E /* CardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModel.swift; sourceTree = "<group>"; };
+		827097FE2736174D0078827E /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
+		827098002736175A0078827E /* PassView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassView.swift; sourceTree = "<group>"; };
+		827098032736178A0078827E /* BorderedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderedButton.swift; sourceTree = "<group>"; };
+		82709806273618020078827E /* MFAScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MFAScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +85,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82709810273619130078827E /* SlideOverCard in Frameworks */,
+				8270980D273618EB0078827E /* CodeScanner in Frameworks */,
+				8270980A273618570078827E /* THOTP in Frameworks */,
 				826FAC3C25EF02AB008CF52A /* FirebaseAnalytics in Frameworks */,
 				826FAC3E25EF02AB008CF52A /* FirebaseAuth in Frameworks */,
 			);
@@ -116,9 +136,10 @@
 				826FAC2F25EF0008008CF52A /* GoogleService-Info.plist */,
 				826FAC0A25EEFED0008CF52A /* Info.plist */,
 				826FAC5425EF07EB008CF52A /* Models */,
-				826FAC5325EF07D5008CF52A /* Resources */,
 				826FAC5225EF07BC008CF52A /* Views */,
+				827097F0273615E50078827E /* ViewModel */,
 				826FAC0125EEFECF008CF52A /* CryptoGripApp.swift */,
+				826FAC5325EF07D5008CF52A /* Resources */,
 				826FAC0725EEFED0008CF52A /* Preview Content */,
 			);
 			path = CryptoGrip;
@@ -153,11 +174,10 @@
 		826FAC5225EF07BC008CF52A /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				826FAC0325EEFECF008CF52A /* ContentView.swift */,
-				826FAC4C25EF06E1008CF52A /* HomePage.swift */,
-				826FAC5525EF0903008CF52A /* LoginView.swift */,
-				826FAC5D25F17CFB008CF52A /* AuthPage.swift */,
-				826FAC6225F17E1E008CF52A /* SignUpView.swift */,
+				82709805273617D40078827E /* Screens */,
+				82709802273617740078827E /* CustomUI */,
+				827097FB2736172D0078827E /* MFA */,
+				827097EF2736157E0078827E /* Authentication */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -173,10 +193,81 @@
 		826FAC5425EF07EB008CF52A /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				827097F6273616DC0078827E /* Account */,
+				827097F3273616AD0078827E /* MFA */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		827097EF2736157E0078827E /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				826FAC5525EF0903008CF52A /* LoginView.swift */,
+				826FAC5D25F17CFB008CF52A /* AuthPage.swift */,
+				826FAC6225F17E1E008CF52A /* SignUpView.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		827097F0273615E50078827E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				827097F4273616B50078827E /* MFA */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		827097F3273616AD0078827E /* MFA */ = {
+			isa = PBXGroup;
+			children = (
+				827097F7273616F30078827E /* PassModel.swift */,
+				827097F9273616FE0078827E /* CardModel.swift */,
+			);
+			path = MFA;
+			sourceTree = "<group>";
+		};
+		827097F4273616B50078827E /* MFA */ = {
+			isa = PBXGroup;
+			children = (
+				827097F1273616900078827E /* PassViewModel.swift */,
+			);
+			path = MFA;
+			sourceTree = "<group>";
+		};
+		827097F6273616DC0078827E /* Account */ = {
+			isa = PBXGroup;
+			children = (
 				826FAC4725EF04D0008CF52A /* StringExtensions.swift */,
 				826FAC4225EF030B008CF52A /* AuthenticationState.swift */,
 			);
-			path = Models;
+			path = Account;
+			sourceTree = "<group>";
+		};
+		827097FB2736172D0078827E /* MFA */ = {
+			isa = PBXGroup;
+			children = (
+				827097FE2736174D0078827E /* GridView.swift */,
+				827098002736175A0078827E /* PassView.swift */,
+			);
+			path = MFA;
+			sourceTree = "<group>";
+		};
+		82709802273617740078827E /* CustomUI */ = {
+			isa = PBXGroup;
+			children = (
+				827098032736178A0078827E /* BorderedButton.swift */,
+			);
+			path = CustomUI;
+			sourceTree = "<group>";
+		};
+		82709805273617D40078827E /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				826FAC0325EEFECF008CF52A /* ContentView.swift */,
+				826FAC4C25EF06E1008CF52A /* HomePage.swift */,
+				82709806273618020078827E /* MFAScreen.swift */,
+			);
+			path = Screens;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -198,6 +289,9 @@
 			packageProductDependencies = (
 				826FAC3B25EF02AB008CF52A /* FirebaseAnalytics */,
 				826FAC3D25EF02AB008CF52A /* FirebaseAuth */,
+				82709809273618570078827E /* THOTP */,
+				8270980C273618EB0078827E /* CodeScanner */,
+				8270980F273619130078827E /* SlideOverCard */,
 			);
 			productName = CryptoGrip;
 			productReference = 826FABFE25EEFECF008CF52A /* CryptoGrip.app */;
@@ -272,6 +366,9 @@
 			mainGroup = 826FABF525EEFECF008CF52A;
 			packageReferences = (
 				826FAC3A25EF02AB008CF52A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				82709808273618570078827E /* XCRemoteSwiftPackageReference "THOTP" */,
+				8270980B273618EB0078827E /* XCRemoteSwiftPackageReference "CodeScanner" */,
+				8270980E273619120078827E /* XCRemoteSwiftPackageReference "SlideOverCard" */,
 			);
 			productRefGroup = 826FABFF25EEFECF008CF52A /* Products */;
 			projectDirPath = "";
@@ -317,12 +414,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				826FAC5625EF0903008CF52A /* LoginView.swift in Sources */,
+				827098012736175A0078827E /* PassView.swift in Sources */,
+				827097FA273616FE0078827E /* CardModel.swift in Sources */,
+				827097F2273616900078827E /* PassViewModel.swift in Sources */,
+				827097FF2736174D0078827E /* GridView.swift in Sources */,
+				827098042736178A0078827E /* BorderedButton.swift in Sources */,
+				827097F8273616F30078827E /* PassModel.swift in Sources */,
 				826FAC4D25EF06E1008CF52A /* HomePage.swift in Sources */,
 				826FAC4825EF04D0008CF52A /* StringExtensions.swift in Sources */,
 				826FAC0425EEFECF008CF52A /* ContentView.swift in Sources */,
 				826FAC6325F17E1E008CF52A /* SignUpView.swift in Sources */,
 				826FAC5E25F17CFB008CF52A /* AuthPage.swift in Sources */,
 				826FAC4325EF030B008CF52A /* AuthenticationState.swift in Sources */,
+				82709807273618020078827E /* MFAScreen.swift in Sources */,
 				826FAC0225EEFECF008CF52A /* CryptoGripApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -655,6 +759,30 @@
 				minimumVersion = 7.7.0;
 			};
 		};
+		82709808273618570078827E /* XCRemoteSwiftPackageReference "THOTP" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ericlewis/THOTP.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		8270980B273618EB0078827E /* XCRemoteSwiftPackageReference "CodeScanner" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/twostraws/CodeScanner";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		8270980E273619120078827E /* XCRemoteSwiftPackageReference "SlideOverCard" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/joogps/SlideOverCard.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -667,6 +795,21 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 826FAC3A25EF02AB008CF52A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseAuth;
+		};
+		82709809273618570078827E /* THOTP */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 82709808273618570078827E /* XCRemoteSwiftPackageReference "THOTP" */;
+			productName = THOTP;
+		};
+		8270980C273618EB0078827E /* CodeScanner */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8270980B273618EB0078827E /* XCRemoteSwiftPackageReference "CodeScanner" */;
+			productName = CodeScanner;
+		};
+		8270980F273619130078827E /* SlideOverCard */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8270980E273619120078827E /* XCRemoteSwiftPackageReference "SlideOverCard" */;
+			productName = SlideOverCard;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

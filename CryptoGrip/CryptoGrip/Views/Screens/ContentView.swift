@@ -13,11 +13,12 @@ struct ContentView: View {
     
     var body: some View {
         Group {
-            if authState.loggedInUser != nil {
-                HomePage()
-            } else {
-                AuthPage()
-            }
+//            if authState.loggedInUser != nil {
+//                HomePage()
+//            } else {
+//                AuthPage()
+//            }
+            MFAScreen()
         }
         .animation(.easeInOut)
         .transition(.move(edge: .bottom))
