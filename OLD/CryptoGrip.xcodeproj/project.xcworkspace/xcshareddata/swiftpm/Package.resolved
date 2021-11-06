@@ -1,0 +1,52 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Base32",
+        "repositoryURL": "https://github.com/norio-nomura/Base32.git",
+        "state": {
+          "branch": null,
+          "revision": "c4bc0a49689999ae2c7c778f3830a6a6e694efb8",
+          "version": "0.9.0"
+        }
+      },
+      {
+        "package": "CodeScanner",
+        "repositoryURL": "https://github.com/twostraws/CodeScanner",
+        "state": {
+          "branch": null,
+          "revision": "a2144ddaa7c43a6ee00873edd4cc7815ad97942f",
+          "version": "1.0.7"
+        }
+      },
+      {
+        "package": "SlideOverCard",
+        "repositoryURL": "https://github.com/joogps/SlideOverCard.git",
+        "state": {
+          "branch": null,
+          "revision": "ddafedae02dc5423aa872b274d9011412dc4837f",
+          "version": "2.0.0"
+        }
+      },
+      {
+        "package": "THOTP",
+        "repositoryURL": "https://github.com/ericlewis/THOTP.git",
+        "state": {
+          "branch": null,
+          "revision": "bbc87fc99091a787ae8ea70c5793429e467d7e86",
+          "version": "1.0.63"
+        }
+      },
+      {
+        "package": "URL-QueryItem",
+        "repositoryURL": "https://github.com/ericlewis/URL-QueryItem.git",
+        "state": {
+          "branch": null,
+          "revision": "53787eb7ee21b9b132b8e97ed412c1f53009f9f8",
+          "version": "1.0.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
