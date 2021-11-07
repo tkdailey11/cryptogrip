@@ -6,10 +6,11 @@
 //
 
 import SwiftUI
+import THOTP
 
-struct PassView: View {
+struct MFAView: View {
     
-    @ObservedObject var viewModel: PassViewModel = PassViewModel(urlStr: "otpauth://totp/test?secret=6ahbhayvbxzkkbpz4gbefgo42vxxpjfyrv6w3jzq7iq2qefychxfgxej&algorithm=SHA512&digits=6&period=30&lock=false")
+    var viewModel: MutatingSecurable
     
     var body: some View {
         ZStack {
@@ -25,7 +26,7 @@ struct PassView: View {
                         .font(.title)
                         .foregroundColor(.white)
                     Spacer()
-                    Text(viewModel.passcode)
+                    Text(viewModel.passcode.currentPassword ?? "")
                         .font(.title)
                         .foregroundColor(.white)
                     Spacer()
@@ -42,6 +43,6 @@ struct PassView: View {
 
 struct PassView_Previews: PreviewProvider {
     static var previews: some View {
-        PassView()
+        MFAView(viewModel: MFAModel(title: "Some Title", currentCode: "", passcode: Password.initWithURLString("")))
     }
 }

@@ -11,17 +11,18 @@ import CodeScanner
 
 struct MFAScreen: View {
     @State var isPresented: Bool = false
+    @State var viewModel: MFAViewModel = MFAViewModel()
     
     var body: some View {
         VStack {
             Text("MFA Accounts")
                 .font(.largeTitle)
-            
-            PassView()
+
+            GridView(viewModel: viewModel)
             
             Button("Add Account"){
-                print("Add")
-                self.isPresented = true
+                //self.isPresented = true
+                self.viewModel.refresh()
             }
             .buttonStyle(BorderedButtonStyle(backgroundColor: .blue, foregroundColor: .white, isDisabled: false))
         }
@@ -39,11 +40,17 @@ struct MFAScreen: View {
                 self.isPresented = false
             }
         }
+        .onAppear(perform: {
+            //replace this with a timer based method to update model
+            self.viewModel.initWithTestData()
+        })
     }
 }
 
 struct MFAScreen_Previews: PreviewProvider {
+    static var screen = MFAScreen()
     static var previews: some View {
-        MFAScreen()
+        screen.viewModel.initWithTestData()
+        return screen
     }
 }

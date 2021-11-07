@@ -22,16 +22,17 @@
 		826FAC5625EF0903008CF52A /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826FAC5525EF0903008CF52A /* LoginView.swift */; };
 		826FAC5E25F17CFB008CF52A /* AuthPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826FAC5D25F17CFB008CF52A /* AuthPage.swift */; };
 		826FAC6325F17E1E008CF52A /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826FAC6225F17E1E008CF52A /* SignUpView.swift */; };
-		827097F2273616900078827E /* PassViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827097F1273616900078827E /* PassViewModel.swift */; };
-		827097F8273616F30078827E /* PassModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827097F7273616F30078827E /* PassModel.swift */; };
-		827097FA273616FE0078827E /* CardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827097F9273616FE0078827E /* CardModel.swift */; };
+		827097F2273616900078827E /* MFAViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827097F1273616900078827E /* MFAViewModel.swift */; };
+		827097F8273616F30078827E /* MFAModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827097F7273616F30078827E /* MFAModel.swift */; };
 		827097FF2736174D0078827E /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827097FE2736174D0078827E /* GridView.swift */; };
-		827098012736175A0078827E /* PassView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827098002736175A0078827E /* PassView.swift */; };
+		827098012736175A0078827E /* MFAView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827098002736175A0078827E /* MFAView.swift */; };
 		827098042736178A0078827E /* BorderedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827098032736178A0078827E /* BorderedButton.swift */; };
 		82709807273618020078827E /* MFAScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82709806273618020078827E /* MFAScreen.swift */; };
 		8270980A273618570078827E /* THOTP in Frameworks */ = {isa = PBXBuildFile; productRef = 82709809273618570078827E /* THOTP */; };
 		8270980D273618EB0078827E /* CodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = 8270980C273618EB0078827E /* CodeScanner */; };
 		82709810273619130078827E /* SlideOverCard in Frameworks */ = {isa = PBXBuildFile; productRef = 8270980F273619130078827E /* SlideOverCard */; };
+		82709837273761CE0078827E /* Securable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82709836273761CE0078827E /* Securable.swift */; };
+		8270983A27376DF50078827E /* Password+CustomInit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8270983927376DF50078827E /* Password+CustomInit.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,13 +72,14 @@
 		826FAC5525EF0903008CF52A /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		826FAC5D25F17CFB008CF52A /* AuthPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthPage.swift; sourceTree = "<group>"; };
 		826FAC6225F17E1E008CF52A /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
-		827097F1273616900078827E /* PassViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassViewModel.swift; sourceTree = "<group>"; };
-		827097F7273616F30078827E /* PassModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassModel.swift; sourceTree = "<group>"; };
-		827097F9273616FE0078827E /* CardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModel.swift; sourceTree = "<group>"; };
+		827097F1273616900078827E /* MFAViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MFAViewModel.swift; sourceTree = "<group>"; };
+		827097F7273616F30078827E /* MFAModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MFAModel.swift; sourceTree = "<group>"; };
 		827097FE2736174D0078827E /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
-		827098002736175A0078827E /* PassView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassView.swift; sourceTree = "<group>"; };
+		827098002736175A0078827E /* MFAView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MFAView.swift; sourceTree = "<group>"; };
 		827098032736178A0078827E /* BorderedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderedButton.swift; sourceTree = "<group>"; };
 		82709806273618020078827E /* MFAScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MFAScreen.swift; sourceTree = "<group>"; };
+		82709836273761CE0078827E /* Securable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Securable.swift; sourceTree = "<group>"; };
+		8270983927376DF50078827E /* Password+CustomInit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Password+CustomInit.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +135,8 @@
 		826FAC0025EEFECF008CF52A /* CryptoGrip */ = {
 			isa = PBXGroup;
 			children = (
+				8270983827376DDD0078827E /* Extensions */,
+				827098352737612E0078827E /* Protocols */,
 				826FAC2F25EF0008008CF52A /* GoogleService-Info.plist */,
 				826FAC0A25EEFED0008CF52A /* Info.plist */,
 				826FAC5425EF07EB008CF52A /* Models */,
@@ -220,8 +224,7 @@
 		827097F3273616AD0078827E /* MFA */ = {
 			isa = PBXGroup;
 			children = (
-				827097F7273616F30078827E /* PassModel.swift */,
-				827097F9273616FE0078827E /* CardModel.swift */,
+				827097F7273616F30078827E /* MFAModel.swift */,
 			);
 			path = MFA;
 			sourceTree = "<group>";
@@ -229,7 +232,7 @@
 		827097F4273616B50078827E /* MFA */ = {
 			isa = PBXGroup;
 			children = (
-				827097F1273616900078827E /* PassViewModel.swift */,
+				827097F1273616900078827E /* MFAViewModel.swift */,
 			);
 			path = MFA;
 			sourceTree = "<group>";
@@ -247,7 +250,7 @@
 			isa = PBXGroup;
 			children = (
 				827097FE2736174D0078827E /* GridView.swift */,
-				827098002736175A0078827E /* PassView.swift */,
+				827098002736175A0078827E /* MFAView.swift */,
 			);
 			path = MFA;
 			sourceTree = "<group>";
@@ -268,6 +271,22 @@
 				82709806273618020078827E /* MFAScreen.swift */,
 			);
 			path = Screens;
+			sourceTree = "<group>";
+		};
+		827098352737612E0078827E /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				82709836273761CE0078827E /* Securable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		8270983827376DDD0078827E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8270983927376DF50078827E /* Password+CustomInit.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -414,12 +433,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				826FAC5625EF0903008CF52A /* LoginView.swift in Sources */,
-				827098012736175A0078827E /* PassView.swift in Sources */,
-				827097FA273616FE0078827E /* CardModel.swift in Sources */,
-				827097F2273616900078827E /* PassViewModel.swift in Sources */,
+				8270983A27376DF50078827E /* Password+CustomInit.swift in Sources */,
+				827098012736175A0078827E /* MFAView.swift in Sources */,
+				827097F2273616900078827E /* MFAViewModel.swift in Sources */,
 				827097FF2736174D0078827E /* GridView.swift in Sources */,
+				82709837273761CE0078827E /* Securable.swift in Sources */,
 				827098042736178A0078827E /* BorderedButton.swift in Sources */,
-				827097F8273616F30078827E /* PassModel.swift in Sources */,
+				827097F8273616F30078827E /* MFAModel.swift in Sources */,
 				826FAC4D25EF06E1008CF52A /* HomePage.swift in Sources */,
 				826FAC4825EF04D0008CF52A /* StringExtensions.swift in Sources */,
 				826FAC0425EEFECF008CF52A /* ContentView.swift in Sources */,
